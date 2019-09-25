@@ -1,8 +1,7 @@
-.localsWrap{
-  display: inline-flex;
-}
-    
-
 .mtb-wrap {
       font-family: "Titillium Web", Arial, Tahoma, sans-serif;
+}
+
+.localsWrap{
+  display: inline-flex;
 }

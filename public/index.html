@@ -11,10 +11,8 @@
 <link rel="apple-touch-icon" href="#">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
-
-
-<link rel="stylesheet" href="css/app.css">
-<link rel="stylesheet" href="css/mix.css">
+<link rel="stylesheet" href="src/css/app.css">
+<link rel="stylesheet" href="src/css/mix.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
@@ -120,9 +118,10 @@
           <form action="" method="post" autocomplete="off" target="_blank">
               <input type="hidden" name="form" value="hotel">
 
-              <label class="box box100">
-                  <input type="text" name="Cidade" placeholder="Para onde você vai?">
-              </label>
+              <div id="cidadesWrap" class="box box100">
+                <input type="text" id="searchCidades" name="Origem" class="form-control form-control-lg">
+                <div class="" id="match-list"></div>
+              </div>
 
               <label class="box box50">
                   <input type="text" name="chekin" placeholder="Check-in" class="datepicker hasDatepicker" id="dp1568134500569">
@@ -181,13 +180,8 @@
 </div>
 </div>
 
-
-
-
-
-
-<script src="js/tabs.js" charset="utf-8"></script>
-<script src="js/main.js" charset="utf-8"></script>
+<script src="src/tabs.js" charset="utf-8"></script>
+<script src="./bundle.js" charset="utf-8"></script>
 
   </body>
 </html>
